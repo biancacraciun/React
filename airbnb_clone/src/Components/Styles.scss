@@ -1,0 +1,255 @@
+$grey: #ccc;
+$button: white;
+$border: 1px solid #ccc;
+$shadow: 1px 1px #ccc;
+$font:  #929499;
+$show-all: #008489;
+$radius: 3px;
+$another-grey: #4C5358;
+$input: 0px 13px;
+$first-margin-top: -1px;
+$second-margin-top: -2px;
+$rating-margin: -5px 0px 10px 0px;
+$span-margin: 0px 5px 10px 0px;
+$footer-margin: 0px 30px 10px 30px;
+$hover-margin: 0px;
+$mobil-margin: -9px 0px 10px 62px;
+
+
+@import "https://fonts.google.com/?selection.family=Ibarra+Real+Nova";
+   
+* {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.header {
+    border-bottom: $border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 64px;
+
+    .left-section {
+        display: flex;
+        flex-direction: row;
+        
+        img {
+            width: 32px;
+            height: 32px;
+            margin: auto 15px;
+        }
+
+        .search {
+            border: $border;
+            border-radius: $radius;
+            border-style: outset;
+            box-shadow: $shadow;
+            width: 268px;
+            height: 26px;
+            
+            #icon {
+                margin: auto 2px;
+                padding: 2px;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                padding: $input;
+                font-size: 15px;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: auto 2px;
+            padding: 0px 10px;
+
+            a {
+                text-decoration: none;
+                font-size: 15px;
+
+                &:hover {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+.navigation {
+    border-bottom: $border;
+    height: 38px;
+
+    #section {
+        height: auto;
+        margin: 8px 0px 0px 62px;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            border: $border;
+            border-radius: $radius;
+            padding: 5px 5px;
+            margin: 0px 15px 0px 0px;
+            font-size: 12px;
+        }
+    }
+}
+
+.place {
+
+    img {
+        width: 290px;
+        height: 190px;
+        border-radius: $radius;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    p:first-of-type {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 190px;
+        color: $font;
+        margin-top: $first-margin-top;
+    }
+
+    p:last-of-type {
+        font-size: 15px;
+        font-weight: bold;
+        width: 190px;
+        color: $another-grey;
+        margin-top: $second-margin-top;
+    }
+}
+
+.rating {
+    margin: $rating-margin;
+
+    span {
+        font-size: 9px;
+        color: $font;
+        margin: $span-margin;
+    }
+}
+
+.homes {
+    margin: 5px 42px;
+
+    h2 {
+        font-size: 30px;
+        margin: inherit;
+    }
+
+    .view {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    } 
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: $footer-margin;
+
+    #show-all {
+        background-color: $button;
+        color: $show-all;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: bold;
+
+        &:hover {
+            font-size: 15px;
+        }
+    }
+
+    #more {
+        border: 1px solid $grey;
+        border-radius: $radius;
+        box-shadow: 1px 1px $grey;
+        display: inline-block;
+        padding: 0px 3px;
+        margin: 0px 10px 15px 0px;
+        cursor: pointer;
+
+        button {
+            background-color: $button;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+}
+
+@media only screen and (max-device-width: 320px), (max-device-width: 678px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        margin: 2px 2px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                text-align: center;
+
+                a {
+                    color: black;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        #section {
+            margin: 7px 5px;
+        }
+    }
+
+    .homes {
+
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #more {
+            text-align: center;
+            margin: 0px 5px;
+
+            button {
+                outline: none;
+            }
+
+            #double-right {
+                float: right;
+                padding-right: 5px;
+            }
+        }
+    }
+}
