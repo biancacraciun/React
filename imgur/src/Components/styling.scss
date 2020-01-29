@@ -1,0 +1,224 @@
+@import 'https://fonts.google.com/?selection.family=Open+Sans&query=open+san';
+$border: 1px solid #ccc;
+$radius: 3px;
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    height: 450px;
+    background-color: #48A0B5;
+
+    .home {
+        background-color: #297DF6;
+        height: 50px;
+        position: relative;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 23%;
+            transform: translate(-23%, -50%);
+
+            &:hover {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.search {
+    text-align: center;
+
+    .search-motor {
+        margin: 50px 0px;
+
+        input:first-of-type {
+            border-radius: $radius;
+            width: 150px;
+            height: 26px;
+            border: $border;
+            font-size: 11px;
+            margin: 0px 5px;
+
+            &::placeholder {
+                transform: translate(5%, 0%);
+            }
+        }
+
+        input:last-of-type {
+            @extend input:first-of-type;
+            &::-webkit-inner-spin-button, 
+            ::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+            }
+        }
+
+        button {
+            width: 45px;
+            height: 29px;
+            border-radius: $radius;
+            border: $border;
+            font-size: 11px;
+            background-color: #297DF6;
+            color: white;
+        }
+    }
+}
+
+.app {
+    #title {
+        text-align: center;
+        opacity: 0.5;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+}
+
+.food-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    img {
+        width: 170px;
+        height: 170px;
+        border-radius: $radius;
+    }
+
+    h4 {
+        text-align: center;
+        display: inline-block;
+    }
+
+    #price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: -10px 0px 10px 0px;
+
+        div {
+            border: $border;
+            border-radius: $radius;
+            background-color: #878E95;
+            color: white;
+            display: inline-block;
+            padding: 3px;
+            font-size: 11px;
+        }
+
+        span {
+            color: #878E95;
+            font-size: 13px;
+        }
+    }
+
+    .food-functions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        button {
+            background-color: #297DF6;
+            border: 1px solid #297DF6;
+            border-radius: $radius;
+            margin: 0px 5px;
+            width: 60px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.item {
+    display: block;
+    border-bottom: $border;
+    margin: 0px auto 70px auto;
+    width: 900px;
+    translate: (50%, 0%);  
+}
+
+.box {
+    margin: 0px 25px;
+    display: inline-block;
+    
+    #food-info {
+        margin: 0px 21px;
+        border-bottom: $border;
+    }
+}
+
+@media screen 
+and (min-device-width: 376px) and (max-device-width: 920px) {
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+    }
+        
+    .box {
+        margin: 0px 25px;
+        display: inline-block;
+            
+        #food-info {
+            margin: 0px 21px;
+            border-bottom: $border;
+        }
+    }
+
+}
+
+@media screen and (max-device-width: 375px) and (min-device-width: 154px) {
+    .search {
+        .search-motor {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            input:first-of-type {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+    
+            button {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+        
+        }
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+        
+    .box {
+        margin: 0px 25px;
+        display: inline-block;
+            
+        #food-info {
+            margin: 0px 21px;
+            border-bottom: $border;
+        }
+    }
+}
+
