@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+.navigation {
+  font-family: 'Handlee', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 130px;
+  left: 0px;
+  background-color: #FAFAFA;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.navigation ul li #home {
+  color: #FF8841;
+}
+
+.navigation ul li .link {
+  text-decoration: none;
+  color: #60A6FE;
+}
+
+.navigation ul li .link:hover {
+  font-size: 18px;
+  color: #FF8841;
+}
+
+.navigation .search {
+  margin: 20px;
+  border-bottom: 1px solid #60A6FE;
+}
+
+.navigation .search #search-logo {
+  vertical-align: middle;
+  margin: 0px 3px;
+  width: 10px;
+  color: #60A6FE;
+}
+
+.navigation .search input[type='search'] {
+  margin: 0px 3px;
+  width: 250px;
+  color: #60A6FE;
+  border: transparent;
+  outline: none;
+  font-size: 15px;
+}
+
+.navigation .search input[type='search']::-webkit-input-placeholder {
+  color: #FF8841;
+}
+
+.navigation .search input[type='search']:-ms-input-placeholder {
+  color: #FF8841;
+}
+
+.navigation .search input[type='search']::-ms-input-placeholder {
+  color: #FF8841;
+}
+
+.navigation .search input[type='search']::placeholder {
+  color: #FF8841;
+}
+
+.navigation .search input[type='search']:focus::-webkit-input-placeholder {
+  -webkit-transform: translate(-100px);
+          transform: translate(-100px);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navigation.css.map */

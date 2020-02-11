@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+
+.navigation {
+    font-family: 'Handlee', cursive;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 130px;
+    left: 0px;
+
+    background-color: #FAFAFA; 
+    
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: 10px;
+
+            #home {
+                color: #FF8841;
+            }
+            
+            .link {
+                text-decoration: none;
+                color: #60A6FE;
+                // display: inline-block;
+
+                &:hover {
+                    font-size: 18px;
+                    color: #FF8841;
+                } 
+            }
+        }
+    }
+
+    .search {
+        margin: 20px;
+        border-bottom: 1px solid #60A6FE;
+
+        #search-logo {
+            vertical-align: middle;
+            margin: 0px 3px;
+            width: 10px;
+            color: #60A6FE;
+        }
+
+        input[type='search'] {
+            margin: 0px 3px;
+            width: 250px;
+            color: #60A6FE;
+            border: transparent;
+            outline: none;
+            font-size: 15px;
+
+            &::placeholder {
+                color: #FF8841;
+            }
+
+            &:focus {
+                &::-webkit-input-placeholder {
+                    transform: translate(-100px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+}

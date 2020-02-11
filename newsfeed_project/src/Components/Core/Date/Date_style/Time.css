@@ -1,0 +1,20 @@
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 30px;
+  color: #60A6FE;
+}
+
+.date #clock {
+  margin: 0px 10px;
+}
+
+#data {
+  margin: 0px 10px;
+}
+/*# sourceMappingURL=Time.css.map */

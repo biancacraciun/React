@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+* {
+  font-family: 'Handlee', cursive;
+  font-size: 15px;
+}
+
+.section {
+  width: 450px;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.section #title {
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.section #title:hover {
+  font-size: 17px;
+}
+
+.section #presentational {
+  width: 450px;
+  height: 250px;
+}
+
+.section #link {
+  text-decoration: none;
+  color: black;
+}
+
+.section #link:hover {
+  color: blue;
+}
+
+.section #published {
+  font-size: 11px;
+  float: right;
+}
+
+.infos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 450px;
+      grid-template-columns: 450px 450px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  margin: 250px 25px 50px 50px;
+}
+/*# sourceMappingURL=ArticleContent.css.map */

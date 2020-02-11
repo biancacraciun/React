@@ -1,0 +1,49 @@
+.article {
+    width: 400px;
+    height: 100px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+
+    &:hover {
+        border: 2px solid white;
+        padding: 10px;
+    }
+
+    #title {
+        font-size: 20px; 
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    #published {
+        text-decoration: none;
+        color: black;
+        float: right;
+    }
+
+}
+
+.top__section {
+    height: auto;
+    background-color: #60A6FE;
+    border-radius: 10px;
+    margin: 0px 50px;
+    float: right;
+    box-sizing: border-box;
+
+    .top__news {
+        padding: 30px 25px;
+        margin: 10px;
+    }
+}
+
+#fresh {
+    font-size: 25px;
+    color: white;
+    padding: 30px 25px;
+}

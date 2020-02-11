@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee&display=swap");
+.title {
+  width: auto;
+  height: 150px;
+  background-color: #FAFAFA;
+  text-align: left;
+  font-family: 'Handlee', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.title .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.title .name img {
+  width: 200px;
+  height: auto;
+}
+
+.title .name h1 {
+  color: #75B2FE;
+  font-size: 55px;
+  display: inline-block;
+}
+
+.title .name .button {
+  margin: 0px 10px;
+}
+
+.title #clock {
+  float: right;
+  margin: 25px;
+}
+/*# sourceMappingURL=header.css.map */
