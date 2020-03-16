@@ -1,0 +1,85 @@
+.card {
+    padding: 15px;
+
+    #name {
+        font-size: 20px;
+    }
+
+    #profile {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ccc;
+        cursor: pointer;
+        animation: pulse 5s infinite;
+
+        @keyframes pulse {
+            0% {
+                color: #ccc;
+            }
+
+            100% {
+                color: #F38E9A;
+            }
+        }
+    }
+}
+
+.study {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 350px;
+    height: auto;
+}
+
+#period {
+    position: relative;
+
+    p {
+        font-size: 15px;
+        font-weight: bold;
+        color: #ccc;
+        text-transform: uppercase;
+    }
+
+    div:first-of-type {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #f38e9A;
+        border-radius: 50%;
+        background-color: #f38e9A;
+        margin-left: -21px;
+        position: absolute;
+    }
+}
+
+.title {
+    // margin-bottom: 35px;
+    // margin-left: 40px;
+
+    h1 {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    #line {
+        border: 1px solid #F38E9A;
+        width: 30px;
+        margin-top: -20px;
+        background-color: #F38E9A;
+    }
+
+    &:hover {
+        #line {
+            width: 150px;
+            transition: width 2s;
+        }
+    }
+
+    p {
+        font-weight: bold;
+    }
+}

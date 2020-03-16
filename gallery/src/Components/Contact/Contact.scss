@@ -1,0 +1,44 @@
+.contact {
+
+    .contact-me {
+        margin: 40px 40px 500px 40px;
+
+        #line {
+            border: 1px solid #F38E9A;
+            width: 30px;
+            margin-top: -20px;
+            background-color: #F38E9A;
+        }
+    
+        &:hover {  
+            #line {
+                width: 150px;
+                transition: width 2s;
+            }
+        }
+    
+        h1 { 
+            font-size: 40px;
+            cursor: pointer;
+        }
+    
+        p {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    margin: 0px 10px;
+                }
+
+                span {
+                    margin: 0px 10px;
+                }
+            }
+        }
+    }
+}

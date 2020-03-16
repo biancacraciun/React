@@ -1,0 +1,89 @@
+.card {
+  padding: 15px;
+}
+
+.card #name {
+  font-size: 20px;
+}
+
+.card #profile {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card a {
+  text-decoration: none;
+  color: #ccc;
+  cursor: pointer;
+  -webkit-animation: pulse 5s infinite;
+          animation: pulse 5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #ccc;
+  }
+  100% {
+    color: #F38E9A;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: #ccc;
+  }
+  100% {
+    color: #F38E9A;
+  }
+}
+
+.study {
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  width: 350px;
+  height: auto;
+}
+
+#period {
+  position: relative;
+}
+
+#period p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+#period div:first-of-type {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #f38e9A;
+  border-radius: 50%;
+  background-color: #f38e9A;
+  margin-left: -21px;
+  position: absolute;
+}
+
+.title h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.title #line {
+  border: 1px solid #F38E9A;
+  width: 30px;
+  margin-top: -20px;
+  background-color: #F38E9A;
+}
+
+.title:hover #line {
+  width: 150px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.title p {
+  font-weight: bold;
+}
+/*# sourceMappingURL=Resume.css.map */

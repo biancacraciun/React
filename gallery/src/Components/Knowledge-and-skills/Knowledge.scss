@@ -1,0 +1,40 @@
+.knowledge {    
+
+    h1 {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        #line {
+            width: 400px;
+            transition: width 2s;
+        }
+    }
+
+    #line {
+        border: 1px solid #F38E9A;
+        width: 30px;
+        margin-top: -20px;
+        background-color: #F38E9A;
+    }
+
+    .list {
+        border: 1px solid #F38E9A;
+    }
+    
+    .show-more {
+        background-color: #F38E9A;
+        padding: 10px;
+        margin-bottom: 25%;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+}

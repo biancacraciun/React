@@ -1,0 +1,37 @@
+.knowledge h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.knowledge:hover #line {
+  width: 400px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.knowledge #line {
+  border: 1px solid #F38E9A;
+  width: 30px;
+  margin-top: -20px;
+  background-color: #F38E9A;
+}
+
+.knowledge .list {
+  border: 1px solid #F38E9A;
+}
+
+.knowledge .show-more {
+  background-color: #F38E9A;
+  padding: 10px;
+  margin-bottom: 25%;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.knowledge .show-more:focus {
+  outline: none;
+  border: none;
+}
+/*# sourceMappingURL=Knowledge.css.map */

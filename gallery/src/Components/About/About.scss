@@ -1,0 +1,39 @@
+.about {
+    padding: 15px;
+    // margin: 0px 50px 50px 25px;
+    // border-bottom: 1px solid #eee;
+
+    .content {
+        margin-bottom: 200px;
+
+        h1 {
+            font-size: 40px;
+            cursor: pointer;
+        }  
+
+        &:hover {
+            
+            .line {
+                width: 130px;
+                transition: width 2s;
+            }
+        }
+        
+        .line {
+            border: 1px solid #F38E9A;
+            width: 30px;
+            margin-top: -20px;
+            background-color: #F38E9A;
+        }
+
+        .aboutMe {
+            font-weight: bold;
+        }
+
+        .words {
+            border: 1px solid #F38E9A;
+            padding: 20px;
+            margin: 35px 0px;
+        }
+    }
+}

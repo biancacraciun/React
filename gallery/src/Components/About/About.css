@@ -1,0 +1,36 @@
+.about {
+  padding: 15px;
+}
+
+.about .content {
+  margin-bottom: 200px;
+}
+
+.about .content h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.about .content:hover .line {
+  width: 130px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.about .content .line {
+  border: 1px solid #F38E9A;
+  width: 30px;
+  margin-top: -20px;
+  background-color: #F38E9A;
+}
+
+.about .content .aboutMe {
+  font-weight: bold;
+}
+
+.about .content .words {
+  border: 1px solid #F38E9A;
+  padding: 20px;
+  margin: 35px 0px;
+}
+/*# sourceMappingURL=About.css.map */

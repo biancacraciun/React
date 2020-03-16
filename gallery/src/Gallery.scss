@@ -1,0 +1,68 @@
+.header-and-menu { 
+    background-color: #011627;
+    width: 450px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .top {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+body {
+    background-color: #334452;
+}
+
+
+.pages {
+    position: relative;
+    background-color: white;
+    margin-left: 500px;
+    height: 100%;
+    width: auto;
+    padding: 25px;
+
+    .about { 
+        border-bottom: 1px solid #eee;
+        margin: 0px 60px 60px 60px;
+        padding: 25px 25px 130px 25px;
+    }
+
+    .resume {
+        margin: 0px 60px 60px 60px;
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+
+        .education-and-job {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: -50px;
+            justify-content: space-between;
+    
+            #education {
+                display: grid;
+                grid-template-columns: auto;
+                grid-row-gap: 0px;
+                grid-template-rows: auto;
+                justify-content: start;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .knowledge {
+        margin: 0px 60px 60px 60px;
+        padding: 25px 25px 130px 25px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .contact {
+        margin: 0px 60px 60px 60px;
+        border-bottom: 1px solid #eee;
+    }
+}
